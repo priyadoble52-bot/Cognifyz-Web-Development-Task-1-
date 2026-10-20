@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cognifyz Task 1 - HTML & CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 1. Navigation Menu with 3 Links -->
+    <nav class="navbar">
+        <div class="logo">MyProject</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <!-- 2. Heading, Paragraph, and Image -->
+        <section id="home" class="card">
+            <h1>Welcome to Web Development</h1>
+            <p>
+                This webpage is built as part of the Cognifyz Technologies internship task. 
+                It demonstrates basic semantic structure using HTML5 and modern layout styling using CSS3.
+            </p>
+            <div class="image-wrapper">
+                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&auto=format&fit=crop&q=80" alt="Web Development Workspace">
+            </div>
+        </section>
+
+        <!-- 3. Basic Form with Single Input Field and Submit Button -->
+        <section id="contact" class="card">
+            <h2>Subscribe to Newsletter</h2>
+            <p>Enter your email to receive weekly web design updates.</p>
+            
+            <form class="simple-form" onsubmit="event.preventDefault(); alert('Subscribed successfully!');">
+                <input type="email" placeholder="Enter your email address" required>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <p>© 2026 Cognifyz Web Development Intern</p>
+    </footer>
+
+</body>
+</html>
